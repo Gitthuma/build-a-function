@@ -31,7 +31,10 @@ function displayMessage() {
 
      /*Use Node.textContent property to insert an 'x' inside the  <button> element through its reference constant closeBtn.*/
 
+     /*Call Node.appendChild() on the panel constant to append <button> (through its reference closeBtn) inside <div>*/
+
     const closeBtn = document.createElement('button');
     closeBtn.textContent = 'x'; 
+    panel.appendChild(closeBtn);
 
 }
