@@ -2,14 +2,6 @@
 
 /*We start off with the keyword function, which means we are defining a function. This is followed by the name we want to give to our function, a set of parentheses, and a set of curly braces. Any parameters we want to give to our function go inside the parentheses, and the code that runs when we call the function goes inside the curly braces.*/
 
-/*Improving the function with parameters*/
-
-/*As it stands, the function is still not very useful — we don't want to just show the same default message every time. Let's improve our function by adding some parameters, allowing us to call it with some different options.*/
-
-/*Update the first line of the functionwith msgText and msgType parameters*/
-
-/*To make use of the first parameter, update msg.textContent to msgText*/
-
 function displayMessage(msgText, msgType) {
     /*Use a DOM API function called document.querySelector() to select the <html> element and store a reference to it in a constant called html, so we can do things to it later on*/
 
@@ -56,6 +48,7 @@ function displayMessage(msgText, msgType) {
 
 }
 
+
 /*Calling the function*/
 
 /*This line invokes the function, making it run immediately. When you save your code and reload it in the browser, you'll see the little message box appear immediately, only once. We are only calling it once, after all.*/
@@ -70,9 +63,21 @@ const btn = document.querySelector('button');
 
 /*In a similar way to our closeBtn.onclick... line inside the function, here we are calling some code in response to a button being clicked. But in this case, instead of calling an anonymous function containing some code, we are calling our function name directly.*/
 
-btn.onclick = displayMessage;
+btn.onclick = function() {
+    displayMessage('Woo, this is a different message!');
+}
 
 /*We haven't included the parentheses after the function name. This is because we don't want to call the function immediately — only after the button has been clicked. The parentheses are sometimes called the "function invocation operator". You only use them when you want to run the function immediately*/
 
+
+/*Improving the function with parameters*/
+
+/*As it stands, the function is still not very useful — we don't want to just show the same default message every time. Let's improve our function by adding some parameters, allowing us to call it with some different options.*/
+
+/*Update the first line of the functionwith msgText and msgType parameters*/
+
+/*To make use of the first parameter, update msg.textContent to msgText*/
+
+/*Update function call to include some updated message text*/
 
 
