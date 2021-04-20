@@ -27,6 +27,8 @@ function displayMessage() {
     msg.textContent = 'This is a message box';
     panel.appendChild(msg);
 
-    
+    /*Use document.createElement() to create a <button> element and store a reference to it in a constant called closeBtn. This button will be what needs to be clicked/activated when the user wants to close the message box.*/
+
+    const closeBtn = document.createElement('button'); 
 
 }
