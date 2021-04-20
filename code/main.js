@@ -19,7 +19,10 @@ function displayMessage() {
 
     /*Use DOM API function called document.createElement() to create a <p> element and store a reference to it in a constant called msg. This is the paragraph element that will hold the text inside the message box*/
 
+    /*Use Node.textContent property to assign text to the <p> elements through its reference constant msg. This is the text that will be displayed inside the message box*/
+
     const msg = document.createElement('p');
+    msg.textContent = 'This is a message box';
 
     
 
