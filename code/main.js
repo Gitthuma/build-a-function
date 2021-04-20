@@ -8,6 +8,8 @@
 
 /*Update the first line of the functionwith msgText and msgType parameters*/
 
+/*To make use of the first parameter, update msg.textContent to msgText*/
+
 function displayMessage(msgText, msgType) {
     /*Use a DOM API function called document.querySelector() to select the <html> element and store a reference to it in a constant called html, so we can do things to it later on*/
 
@@ -30,7 +32,7 @@ function displayMessage(msgText, msgType) {
     /*Call Node.appendChild() on the panel constant to append <p> (through its reference msg) inside <div>*/
 
     const msg = document.createElement('p');
-    msg.textContent = 'This is a message box';
+    msg.textContent = msgText;
     panel.appendChild(msg);
 
     /*Use document.createElement() to create a <button> element and store a reference to it in a constant called closeBtn. This button will be what needs to be clicked/activated when the user wants to close the message box.*/
