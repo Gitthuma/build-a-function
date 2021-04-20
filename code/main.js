@@ -29,6 +29,9 @@ function displayMessage() {
 
     /*Use document.createElement() to create a <button> element and store a reference to it in a constant called closeBtn. This button will be what needs to be clicked/activated when the user wants to close the message box.*/
 
-    const closeBtn = document.createElement('button'); 
+     /*Use Node.textContent property to insert an 'x' inside the  <button> element through its reference constant closeBtn.*/
+
+    const closeBtn = document.createElement('button');
+    closeBtn.textContent = 'x'; 
 
 }
