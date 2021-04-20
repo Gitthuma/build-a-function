@@ -21,8 +21,11 @@ function displayMessage() {
 
     /*Use Node.textContent property to assign text to the <p> elements through its reference constant msg. This is the text that will be displayed inside the message box*/
 
+    /*Call Node.appendChild() on the panel constant to append <p> (through its reference msg) inside <div>*/
+
     const msg = document.createElement('p');
     msg.textContent = 'This is a message box';
+    panel.appendChild(msg);
 
     
 
