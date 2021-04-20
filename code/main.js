@@ -52,4 +52,5 @@ function displayMessage() {
 
 /*This line invokes the function, making it run immediately. When you save your code and reload it in the browser, you'll see the little message box appear immediately, only once. We are only calling it once, after all.*/
 
-displayMessage();
+/*displayMessage();*/
+
