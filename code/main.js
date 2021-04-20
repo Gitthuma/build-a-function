@@ -54,3 +54,9 @@ function displayMessage() {
 
 /*displayMessage();*/
 
+/*In this demo, we'll get the message box to appear when the user clicks the button.*/
+
+/*Select the button and store a reference to it in a constant.*/
+
+const btn = document.querySelector('button');
+
