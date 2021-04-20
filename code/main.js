@@ -2,7 +2,13 @@
 
 /*We start off with the keyword function, which means we are defining a function. This is followed by the name we want to give to our function, a set of parentheses, and a set of curly braces. Any parameters we want to give to our function go inside the parentheses, and the code that runs when we call the function goes inside the curly braces.*/
 
-function displayMessage() {
+/*Improving the function with parameters*/
+
+/*As it stands, the function is still not very useful — we don't want to just show the same default message every time. Let's improve our function by adding some parameters, allowing us to call it with some different options.*/
+
+/*Update the first line of the functionwith msgText and msgType parameters*/
+
+function displayMessage(msgText, msgType) {
     /*Use a DOM API function called document.querySelector() to select the <html> element and store a reference to it in a constant called html, so we can do things to it later on*/
 
     const html = document.querySelector('html');
@@ -64,5 +70,7 @@ const btn = document.querySelector('button');
 
 btn.onclick = displayMessage;
 
-/*We haven't included the parentheses after the function name. This is because we don't want to call the function immediately — only after the button has been clicked.*/
+/*We haven't included the parentheses after the function name. This is because we don't want to call the function immediately — only after the button has been clicked. The parentheses are sometimes called the "function invocation operator". You only use them when you want to run the function immediately*/
+
+
 
