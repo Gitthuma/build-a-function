@@ -17,6 +17,10 @@ function displayMessage() {
     panel.setAttribute('class', 'msgBox');
     html.appendChild(panel);
 
+    /*Use DOM API function called document.createElement() to create a <p> element and store a reference to it in a constant called msg. This is the paragraph element that will hold the text inside the message box*/
+
+    const msg = document.createElement('p');
+
     
 
 }
