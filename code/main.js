@@ -7,4 +7,8 @@ function displayMessage() {
 
     const html = document.querySelector('html');
 
+    /*Use DOM API function called document.createElement() to create a <div> element and store a reference to it in a constant called panel. This element will be the outer container of our message box.*/
+
+    const panel = document.createElement('div');
+
 }
