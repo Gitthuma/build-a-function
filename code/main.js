@@ -11,8 +11,11 @@ function displayMessage() {
 
     /*Use DOM API function called Element.setAttribute() to set a class attribute on our panel with a value of msgBox. This is to make it easier to style the element — if you look at the CSS on the page, you'll see that we are using a .msgBox class selector to style the message box and its contents.*/
 
+    /*Call a DOM function called Node.appendChild() on the html constant we stored earlier, which nests one element inside the other as a child of it. We specify the panel <div> as the child we want to append inside the <html> element. We need to do this as the element we created won't just appear on the page on its own — we need to specify where to put it.*/
+
     const panel = document.createElement('div');
     panel.setAttribute('class', 'msgBox');
+    html.appendChild(panel);
 
     
 
