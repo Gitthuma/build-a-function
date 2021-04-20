@@ -37,4 +37,13 @@ function displayMessage() {
     closeBtn.textContent = 'x'; 
     panel.appendChild(closeBtn);
 
+    /*Use an GlobalEventHandlers.onclick event handler to make it so that when the button is clicked, some code is run to delete the whole panel from the page — to close the message box.*/
+
+    /*The onclick handler is a property available on the button (or in fact, any element on the page) that can be set to a function to specify what code to run when the button is clicked. We are making the onclick handler equal to an anonymous function, which contains the code to run when the button is clicked. The line inside the function uses the Node.removeChild() DOM API function to specify that we want to remove a specific child element of the HTML element — in this case the panel <div>.*/
+
+    closeBtn.onclick = function() {
+        panel.parentNode.removeChild(panel);
+        /*Can also be written as - panel.remove()*/
+    }
+
 }
