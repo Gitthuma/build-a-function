@@ -60,3 +60,9 @@ function displayMessage() {
 
 const btn = document.querySelector('button');
 
+/*In a similar way to our closeBtn.onclick... line inside the function, here we are calling some code in response to a button being clicked. But in this case, instead of calling an anonymous function containing some code, we are calling our function name directly.*/
+
+btn.onclick = displayMessage;
+
+/*We haven't included the parentheses after the function name. This is because we don't want to call the function immediately — only after the button has been clicked.*/
+
