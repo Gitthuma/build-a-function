@@ -80,7 +80,7 @@ const btn = document.querySelector('button');
 /*In a similar way to our closeBtn.onclick... line inside the function, here we are calling some code in response to a button being clicked. But in this case, instead of calling an anonymous function containing some code, we are calling our function name directly.*/
 
 btn.onclick = function() {
-    displayMessage('Woo, this is a different message!');
+    displayMessage('Brian: Hi there, how are you today?', 'chat');
 }
 
 /*We haven't included the parentheses after the function name. This is because we don't want to call the function immediately — only after the button has been clicked. The parentheses are sometimes called the "function invocation operator". You only use them when you want to run the function immediately*/
@@ -105,5 +105,7 @@ btn.onclick = function() {
 /*Update the .msgBox p inside CSS*/
 
 /*Add code to our displayMessage() function to handle displaying the icons.*/
+
+/*Test out updated function by updating the displayMessage() call parameters*/
 
 
