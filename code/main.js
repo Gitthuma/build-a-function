@@ -53,10 +53,10 @@ function displayMessage(msgText, msgType) {
     /*If the msgType parameter is not set at all (or to something different), the paragraph is given default padding and no icon, with no background panel color set either.*/
 
     if (msgType === 'warning') {
-        msg.style.backgroundImage = 'url(../icons/warning.png)';
+        msg.style.backgroundImage = 'url(../images/warning.png)';
         panel.style.backgroundColor = 'red';
     } else if (msgType === 'chat') {
-        msg.style.backgroundImage = 'url(../icons/chat.png)';
+        msg.style.backgroundImage = 'url(../images/chat.png)';
         panel.style.backgroundColor = 'aqua';
     } else {
         msg.style.paddingLeft = '20px';
