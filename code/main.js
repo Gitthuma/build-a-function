@@ -46,6 +46,22 @@ function displayMessage(msgText, msgType) {
         /*Can also be written as - panel.remove()*/
     }
 
+    /*If the msgType parameter is set as 'warning', the warning icon is displayed and the panel's background color is set to red.*/
+
+    /*If it is set to 'chat', the chat icon is displayed and the panel's background color is set to aqua blue.*/
+
+    /*If the msgType parameter is not set at all (or to something different), the paragraph is given default padding and no icon, with no background panel color set either.*/
+
+    if (msgType === 'warning') {
+        msg.style.backgroundImage = 'url(../icons/warning.png)';
+        panel.style.backgroundColor = 'red';
+    } else if (msgType === 'chat') {
+        msg.style.backgroundImage = 'url(../icons/chat.png)';
+        panel.style.backgroundColor = 'aqua';
+    } else {
+        msg.style.paddingLeft = '20px';
+    }
+
 }
 
 
@@ -79,5 +95,15 @@ btn.onclick = function() {
 /*To make use of the first parameter, update msg.textContent to msgText*/
 
 /*Update function call to include some updated message text*/
+
+/*A more complex parameter*/
+
+/*On to the next parameter. This one is going to involve slightly more work — we are going to set it so that depending on what the msgType parameter is set to, the function will display a different icon and a different background color.*/
+
+/*Update the .msgBox width inside CSS*/
+
+/*Update the .msgBox p inside CSS*/
+
+/*Add code to our displayMessage() function to handle displaying the icons.*/
 
 
